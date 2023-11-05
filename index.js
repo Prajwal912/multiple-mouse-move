@@ -1,18 +1,21 @@
 $(document).ready(() => {
-  let luffy = $("#luffy");
-  let luffyIMG = $("#luffy img");
+  let elem = $(".elem");
 
-  luffy.on("mousemove", (dets) => {
-    luffyIMG.css("left", dets.clientX + "px");
-    luffyIMG.css("top", dets.clientY + "px");
-  });
+  elem.forEach(function () {
+    let val = $(this);
 
-  luffy.on("mouseenter", () => {
-    luffyIMG.css("opacity", 1);
-    luffyIMG.css("transition", 'all linear 0.2s');
-  });
-  luffy.on("mouseleave", () => {
-    luffyIMG.css("opacity", 0);
-    luffyIMG.css("transition", 'all linear 0.6s');
+    val.on("mousemove", (dets) => {
+     elemIMG.css("left", dets.clientX + "px");
+     elemIMG.css("top", dets.clientY + "px");
+    });
+
+    val.on("mouseenter", () => {
+     elemIMG.css("opacity", 1);
+     elemIMG.css("transition", "all linear 0.2s");
+    });
+    val.on("mouseleave", () => {
+     elemIMG.css("opacity", 0);
+     elemIMG.css("transition", "all linear 0.6s");
+    });
   });
 });
