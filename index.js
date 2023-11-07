@@ -21,19 +21,4 @@
 //     });
 //   });
 // });
-let elem = document.querySelectorAll(".elem");
 
-elem.forEach((val) => {
-  val.addEventListener("mouseenter", () => {
-    val.childNodes[3].style.opacity = 1;
-    // val.childNodes[3].style.transition = "all linear 0.2s";
-  });
-  val.addEventListener("mouseenter", () => {
-    val.childNodes[3].style.opacity = 0;
-    // val.childNodes[3].style.transition = "all linear 0.6s";
-  });
-//   val.addEventListener("mouse", (dets) => {
-//     val.childNodes[3].style.left = dets.x + "px";
-//     val.childNodes[3].style.top = dets.y + "px";
-//   });
-});

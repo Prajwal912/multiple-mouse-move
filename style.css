@@ -24,12 +24,12 @@ body {
   height: 120px;
   width: 100%;
   border-bottom: 1px solid #fff;
+  align-items: center;
   display: flex;
-   position: relative;
+  position: relative;
 }
 
 .elem h1 {
-  align-self: center;
   opacity: 0.8;
   font-size: 4.5vw;
   position: relative;
@@ -38,12 +38,12 @@ body {
 }
 
 .elem img {
-    height: 150px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    width: 150px;
-    position: absolute;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-  }
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  width: 150px;
+  position: absolute;
+  /* opacity: 0; */
+  /* transform: translate(-50%, -50%); */
+}
